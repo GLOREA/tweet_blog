@@ -1,3 +1,4 @@
 *.backup
-TweetBlogConfig.php
-access_token.php
+assets/medias
+config/accesstoken
+tmp/

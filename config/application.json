@@ -1,0 +1,20 @@
+{
+  "site": {
+    "title": "title"
+  },
+  "twitter": {
+    "consumer_key": "<Consumer key>",
+    "consumer_secret": "<Consumer securet>",
+    "screen_name": "<Screen name>",
+    "accesstoken_file": "config/accesstoken",
+    "tmp_dir": "tmp/",
+    "timestamp_format": "Y/m/d H:i:s"
+  },
+  "database": {
+    "adapter": "mysql",
+    "schema": "db_name",
+    "host": "localhost:3306:/tmp/mysql.sock",
+    "username": "root",
+    "password": "password"
+  }
+}
