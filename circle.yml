@@ -1,0 +1,16 @@
+machine:
+  timezone: Asia/Tokyo
+
+test:
+  pre:
+    - echo "PRE:テスト準備"
+  override:
+    - echo "テストコマンド上書き"
+  post:
+    - echo "POST:ビルド後処理"
+
+deployment:
+  deploy:
+      branch: develop
+      commands:
+        - echo "デプロイ"
