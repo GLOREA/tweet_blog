@@ -1,0 +1,43 @@
+machine:
+  php:
+    version: 5.6
+  hosts:
+    # twitter.com: 127.0.0.1
+
+  environment:
+    # 環境変数
+
+  timezone:
+    Asia/Tokyo
+
+  pre:
+    - echo "PRE:環境準備"
+  post:
+    - echo "POST:環境準備後処理"
+
+checkout:
+  # submodule をチェックアウトするのにつかうやつ
+
+dependencies:
+  pre:
+    - echo "PRE:ビルド準備"
+  post:
+    - echo "POST:ビルド後処理"
+
+database:
+  # テスト環境整備のために seed 読ませたりするのに使う
+  # override:
+
+test:
+  pre:
+    - echo "PRE:テスト準備"
+  override:
+    - echo "テストコマンド上書き"
+  post:
+    - echo "POST:ビルド後処理"
+
+deployment:
+  deploy:
+      branch: develop
+      commands:
+        - echo "デプロイ"
