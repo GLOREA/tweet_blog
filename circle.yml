@@ -13,4 +13,4 @@ deployment:
   deploy:
       branch: develop
       commands:
-        - echo "デプロイ"
+        - ./ftp.sh
