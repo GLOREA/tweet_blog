@@ -3,7 +3,7 @@ machine:
 
 dependencies:
   pre:
-    - apt-get install lftp
+    - sudo apt-get install lftp
 test:
   pre:
     - echo "PRE:テスト準備"
