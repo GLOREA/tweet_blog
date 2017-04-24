@@ -1,6 +1,9 @@
 machine:
   timezone: Asia/Tokyo
 
+dependencies:
+  pre:
+    apt-get install lftp
 test:
   pre:
     - echo "PRE:テスト準備"
