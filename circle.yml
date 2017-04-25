@@ -4,6 +4,7 @@ machine:
 dependencies:
   pre:
     - sudo apt-get install lftp
+    - npm install
 test:
   pre:
     - echo "PRE:テスト準備"
@@ -16,4 +17,5 @@ deployment:
   deploy:
       branch: develop
       commands:
+        - npm run build
         - ./ftp.sh
