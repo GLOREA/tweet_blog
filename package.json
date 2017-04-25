@@ -1,0 +1,29 @@
+{
+  "name": "tweet_blog",
+  "version": "1.0.0",
+  "description": "Twitter のつぶやきをまとめてブログ風に表示する",
+  "main": "dist/index.html",
+  "scripts": {
+    "build": "gulp scss",
+    "watch": "gulp default",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GLOREA/tweet_blog.git"
+  },
+  "author": "Kamiyuian",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GLOREA/tweet_blog/issues"
+  },
+  "homepage": "https://github.com/GLOREA/tweet_blog#readme",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.1.0",
+    "gulp-watch": "^4.3.11",
+    "node": "0.0.0",
+    "node-fs-extra": "^0.8.2",
+    "nodejs": "0.0.0"
+  }
+}
